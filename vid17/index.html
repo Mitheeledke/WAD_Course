@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vid17 Css Selectors</title>
+    <style>
+        /*comments this Css Selectors*/
+        div{
+            background-color: yellow;
+        }
+        /*Class Selector*/
+        .red{
+            background-color: red;
+        }
+        /*Id Selector*/
+        #green{
+            background-color: green;
+        }
+        /*Child Selector */
+        div >p {
+            color: blue;        /*it should be paragraph and child of div onlyany other can't accept it */
+            background-color: brown;
+        }
+        /*Decendent selectors*/
+        div p{
+            color: aquamarine;
+            background-color: violet;
+        }
+        /*Universal Selctor Selects all the tags*/
+        *{
+            margin: 0;
+            padding: 2;   
+        }
+        /*Pseudo Selectors*/
+        a:visited{
+            color: red;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: darkblue;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        p:first-child{
+            background-color: aquamarine;
+            color: black;
+        }
+
+        h1{
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>About the Selectors</h1>
+    <div class="one">
+        <p>This is frist child this is frist chid so it background color changes using p:fristchild method in css</p>
+        <p>this is second child so the background colorw wont change</p>
+    </div>
+    <div class="red">
+        This is div class red
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, voluptas. no selector
+        <p>this is child class</p>
+    </div>
+    <div id="green">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, perspiciatis. id selector
+        <article>
+        <p> this two gets it</p>
+    </article>
+    </div>
+    <ol>
+    <li><a href="https://www.google.com">go to google</a></li>
+    <li><a href="https://www.facebook1.com">go t facebook</a></li>
+    <li><a href="https://www.mitheeledke.com">go to mitheeledke</a></li>
+</ol>
+    
+</body>
+</html>
