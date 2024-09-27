@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vid22 Css sizing units</title>
+    <style>
+        *{
+            margin: 0px ;
+            padding: 0px;
+        }
+        html{
+            font-size: 12px; /*It is root and all are elements in it to access this font use ("rem") size*/
+        }
+        .box{
+            border: 2px solid black;
+            background-color: blanchedalmond;
+            /*  width: 2048px; */
+             width: 90vw; /*Width of Viewport which takes based on width of viewport(Viewport is the area of the website visible to the user.)*/
+             height: 10vh;
+             margin: auto;
+        }
+        .Container{
+            border: 2px solid black;
+            background-color: blanchedalmond;
+            width: 80vw; 
+            /*height: 60vh;/*this is  Relative to 1% of the height of the viewport*/
+            min-height: 80vh;
+            margin: 23px auto;
+            font-size: 18px;
+        }
+        .Container > fris{
+            /*font-size: 1.2em; /*This si muliplication of inherited super class font-size as 18*1.2 = 20.6*/
+            font-size: 2em;/* takes the 18 form super class and in herit and multiple its font size bu 2em (18*2)*= 36*/
+            font-size: 2rem; /*It takes the size form root elemnt which is html and make 12*2 = 24 px font-size*/
+            border: 2px solid black;
+            width: 50%;
+        }
+        .second{
+            font-size: 2em;/* takes the 18 form super class and in herit and multiple its font size bu 2em (18*2)*= 36*/
+            font-size: 2rem; /*It takes the size form root elemnt which is html and make 12*2 = 24 px font-size*/
+            border: 2px solid black;
+            width: 50%;
+        }
+        .th{
+            font-size: 2em;/* takes the 18 form super class and in herit and multiple its font size bu 2em (18*2)*= 36*/
+            font-size: 2rem; /*It takes the size form root elemnt which is html and make 12*2 = 24 px font-size*/
+            border: 2px solid black;
+            width: 50%;
+
+        }
+        .mycount{
+            background-color: rebeccapurple;
+            color: white;
+            font-size: 22px;
+            width: 150vmin; /*in computer vmin is height and in mobile it is width cauese they are less in number compare to width of computer and height of mobile  */
+            margin: 23px auto;;
+            border: 2px solid black;
+        }
+        .vmax{  
+            color: brown;
+            background-color: yellow;
+            font-size: 2rem;
+            width: 80vmax; /*In computer vmin is width and in mobile it is height it sets automatically*/
+            margin: 23px auto;
+            border: 2px solid black;
+
+        }
+        /*Its a percentage property which is based o its parent values divides it into users percentage value*/
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is box
+    </div>
+    <div class="Container">
+        <div class="fris">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem itaque at tenetur perspiciatis nobis dolore autem, necessitatibus voluptatem a doloribus nisi libero illum, labore sint laudantium aliquam cupiditate. Eveniet nemo commodi excepturi illo quae labore molestiae, laboriosam aliquid ipsa tenetur iure accusantium suscipit. At, maiores!
+    <div class="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ullam et ab repellat at officia quaerat, odit voluptates quam atque maxime aliquid, error aspernatur amet odio laboriosam. Officiis, dignissimos autem? Perspiciatis, odio, consequuntur voluptates nostrum porro suscipit magni nulla accusantium eligendi rerum id iure eum consectetur ipsa dicta recusandae! Sapiente praesentium, impedit quasi assumenda quidem totam soluta iste nisi, modi quia officia rerum nostrum nam dolorem minus itaque non earum architecto cumque molestiae hic enim recusandae. Veniam quisquam sint cumque quae distinctio quasi, possimus laboriosam sed debitis omnis odio iusto tempora eligendi laudantium quos reprehenderit, ipsa natus vero illum corrupti similique explicabo? Enim consequatur fuga repellendus a voluptates labore ratione tempore, architecto necessitatibus aliquid. Id modi est accusamus facilis quibusdam error mollitia eum obcaecati asperiores, officiis optio et cupiditate iste enim! Dignissimos repellendus cumque est ipsa, ex id odio neque doloremque ea corporis veritati.
+        <p class="th">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam assumenda officiis vero nesciunt eum! Quo aliquam, id nihil quam impedit perferendis odio nisi alias architecto voluptate odit? In, corporis alias.
+        </p>
+         </div>
+    </div>
+    </div>
+    <div class="mycount">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ab.It is about VMIN go and check in Inspect method to get what is what
+    </div>
+    <div class="vmax">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, doloribus! IT is about VMAX go and check for i Inspect
+    </div>
+    
+    
+</body>
+</html>

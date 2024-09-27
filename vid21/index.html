@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vid21 Css Specificity</title>
+    <style>
+        h1{ /*here it is caled as Element Selector specificity value is 1*/
+            color: blue;
+        }
+        .red{ /*it is called as Class selctor(.) which specificity value is 10*/
+            color: red;
+        }
+        
+        .yellow{
+            color: yellow;
+        }
+        h1.purple{ /*mixture of two slector so h1 is element selector=1 , .purple is class selector vale is 10 totol is 11*/
+            color: purple;
+        }
+        [idea-x = a]{ /*It is Attribute Selector and Value is 10*/
+            color: black;
+        }   
+        [att1=ab]{
+            font-size: large;
+        }
+        h3{
+            color: black !important;
+        }
+        /*so here Specificity is for a=1,harrclass=10,rohan-class=10,[href]=10,:hover=10 total is 41 is specificiy*/
+        a.harryclass.rohan-class[href]:hover{
+            color: beige;
+        }
+        /*Inline Selector has 1000 value and id selector has 100 value*/
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow red purple" idea-x="a">The Cascading helps you out from the Css Specificity it is what that when a single content ha more than one color for that content based on some specification only it going get that property of the Css </h1>
+
+        <h1 att1="ab">Here we used Attribute in h1 it is created by attribut_name = "anyvalueoralphabets" use that attribute in Css like this [attribut_name = "value"]{components or styles for that attribute}</h1>
+
+        <a href="https://www.codewithharry.com/tutorial/css-specificity/#:~:text=in%20this%20tutorial.-,The%20Cascade%20Algorithm,-CSS%20stands%20for">link to Specificity of Codewithharry.com </a>
+
+        <h3 style="color: chocolate; /*Inline selector uses 1000 vlaue*/">The specificity is ["Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector"] more than Inline style can be overrided by using !important</h3>
+
+        <h2 style="margin: 10px;">Specificity Calculation :</h2>
+        To calculate specificity, assign a value to each part of the selector:
+        <ul style="margin: 0px;">
+            <li>Universal Selector: 0</li>
+            <li>Element selectors and pseudo-elements: 1</li>
+            <li>Class selectors, attribute selectors, and pseudo-classes: 10</li>
+            <li>ID selectors: 100</li>
+            <li>Inline styles: 1000</li>
+        </ul>
+    </div>
+</body>
+</html>
