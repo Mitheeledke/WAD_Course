@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vid23 css display property</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        .box{
+            border: 2px solid blue;
+            display: inline-block; /* use ths property to make it inline and use all other properties like padding, margin and width */
+            padding: 10px;
+            margin: 20px;
+            width: 300px;
+            /*display: none;*/
+            /*visibility: hidden;*/
+            display: inline-flex;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am box aking this text into inline using css we use display : inline-block
+    </div>
+    <span class="box">I am a good</span>
+    <span>Boy they are hidden you can get to see using the visibility:hidden remove</span>
+</body>
+</html>

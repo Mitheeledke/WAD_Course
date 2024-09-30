@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vid24 css Shadows outlines</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            padding: 20px;
+            box-shadow: 5px 5px 15px 5px #888888;
+            display: inline-block;
+            width: 500px;
+            outline: 2px solid red;/*outline and border has a basic diff is outline is not a part of boxmodel means no need of changing padding and marging for inceasing or decresing the effect of outlinebox there is aothere property is outline-offset:valuepx outline follows as the borders so to curve the borders use border-radius:vlauepx*/
+           outline-offset: 5px;
+           border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        THsi is box and experiment mee ..!
+    </div>
+    <p style=" text-shadow: 3px 3px 2px #912121;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam optio obcaecati, saepe blanditiis ratione animi alias magni recusandae minima repellendus!
+    </p>
+</body>
+</html>
