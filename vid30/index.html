@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vid30 variables in Css</title>
+    <style>
+        /* div:first-child{
+            background-color: red;
+        } */
+        :root{      /*This is declare for creating the global variables */
+            --color: green;         
+            --secolor: rgb(128, 240, 128);
+            --defpadding:33px;
+            --defopacity:0.7;
+        } 
+        *{
+            margin: 0px;
+            padding: 0px;
+         }
+        .nav{
+            background-color: var(--color);
+        }
+        ul li{
+            
+            list-style: none;
+            display: flex;
+            padding: var(--defpadding);
+            margin: 10px;
+            border: 2px solid var(--secolor)
+        }
+        ul li:first-child{
+            opacity: var(--defopacity);
+            --color:rgb(112, 52, 52);
+            background-color: var(--color,blue); /*if --color variable not there then optionally selects the next color in parameters*/
+        }
+        ul{
+            
+            display: flex;
+        }
+
+        .container{
+            background-color: var(--secolor);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav" >
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contest</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut illo expedita, nulla modi quia, saepe quibusdam similique neque, molestiae tenetur eligendi eaque voluptatum? Est, delectus corporis in distinctio nostrum rem atque odio esse minus saepe modi blanditiis voluptatibus aliquam perspiciatis consequatur similique dolorem optio.
+    </div>
+</body>
+</html>

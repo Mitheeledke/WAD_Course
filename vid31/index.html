@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vid31 Css media queries</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        @media screen and (orientation:landscape){
+            body{
+                border: 2px solid purple;
+            }
+        }
+        @media only screen and (max-width:455px){
+            body{
+                background-color: blue;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+
+        }
+        /*this to start or represent the query is media query which is used to use good in diffrent os screen to make page responsive using media query*/
+
+        /*@media not|only mediatype and (epression){
+            css code..;
+        }*/
+        .boxes{
+            display: flex;
+        }
+        .box{
+            background-color: lightblue;
+            padding: 3px;
+            margin: 3px;
+            height: 344px;
+            width: 344px;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hey i have red colored body
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

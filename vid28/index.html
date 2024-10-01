@@ -22,13 +22,24 @@
             background-color: brown;
             /* position:absolute;this selects absolute values for nearrest positioned values in tis parent is static so html is positioned if parent class made is positioned then it relates that and */
             /* top : 0px;finds for position of nearest ancestor and there go to top 0 px position */
-            /* position: sticky;
+            position: sticky;
             top: 0px;
-            height: 133px;
+            height: 100px;
             width: 100%;
             padding: 0px;
-            margin: 0px; */
-
+            margin: 0px;
+        }
+        nav ul li{
+            list-style: none;
+            border: 1px solid black;
+            background-color: rgb(146, 110, 110);
+            display: flex;
+            padding: 23px;
+            margin: 23px;
+            list-style-position: inside;
+        }
+        ul{
+            display: flex;
         }
 
         /*Always position is static in css*/
@@ -51,11 +62,12 @@
 
         .box4 {
             background-color: black;
-            /* position: fixed;
+            position: fixed;
             bottom: 0px;
             right: 0px;   /*this is fixed bozx we can scroll al other content except this field this cant be scroll its fixed
+            */
             height: 50vh;
-            width: 50vw; */
+            width: 50vw;
         }
 
         
@@ -75,7 +87,13 @@
 
 <body>
     <div class="parent">
-        <div class="box box1"></div>
+        <div class="box box1"> <nav><ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>about me</li>
+            <li>Blog</li>
+            <li>comments</li>
+        </ul></nav></div>
         <div class="box box2"></div>
         <div class="box box3"></div>
         <div class="box box4"></div>
