@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vid35 selectors css</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+        /* .box::first-line{
+            background-color: orange;
+        } */
+        /* .box:first-child:first-line{
+            background-color: orange;
+        } */
+        /* .boxes{
+            border: 2px solid black;
+        }
+        .boxes *{
+            border: 1px solid black;
+        }
+        [data-atribute="123"]{
+            background-color: rebeccapurple;
+        } */
+        .boxes :nth-child(odd){
+            background-color: violet;
+        }
+        .boxes{
+            border: 2px solid black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .boxes::before{
+            color: firebrick;
+            content: "This is before content";  /*::befor and ::after are sudo elements and special cases used */
+        }
+        .boxes::after{
+            content: "THis sis after property in css text is in style tag";
+            color: rgb(17, 18, 116);
+        }
+        ::selection{
+            background-color: black;
+            color: aqua;
+        }
+        .box::first-letter{
+            font-size: 30px;
+        }
+        input::placeholder{
+            background-color: rgb(255, 255, 255);
+            color: rgb(58, 57, 57);
+        }
+        .boxes input{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">This is box Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente molestiae, dolorem eveniet a id maiores hic, aut dolore, aspernatur sit iusto assumenda rerum facilis doloribus. Quas, veritatis alias. Doloremque soluta obcaecati dolor cum ab maiores? Non veritatis quisquam asperiores atque quo adipisci, quia ducimus eligendi.</div>
+        <div class="box">This is box</div>
+        <div data-atribute="123" class="box">This is box</div>
+        <div class="box">This is box</div>
+        <input type="text" placeholder="Name your name..!">
+    </div>
+    
+</body>
+</html>
