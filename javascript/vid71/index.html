@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vid 71 Insertng and removing Elements</title>
+</head>
+<body>
+    <div class="contain">
+        <div class="box" data-createdby="Mitheel">
+            Hey i am box
+        </div>
+    </div>
+    <script>
+        // document.querySelector(".box");
+        // document.querySelector(".box").innerHTML;
+        // document.querySelector(".contain").innerHTML;
+        // document.querySelector(".box").innerText;
+        // document.querySelector(".box").tagName;
+        // document.querySelector(".box").outerHTML;
+        // document.querySelector(".box").textContent;
+        // // document.querySelector(".box").hidden = true;
+        // document.querySelector(".box").hasAttribute("style");
+        // document.querySelector(".box").getAttribute("style");
+        // document.querySelector(".box").setAttribute("style","display: flex")
+        // document.querySelector(".box").removeAttribute("style");
+        // document.designMode = "On";
+
+
+        let div = document.createElement("div");
+        div.innerHTML = "I have been iserted ";
+        div.setAttribute("class","created");
+        document.querySelector(".contain").append(div);
+
+        let cont = document.querySelector(".contain")
+        cont.insertAdjacentHTML("afterbegin","the text 1 after begin");
+        cont.insertAdjacentHTML("afterend","this is tect after End");
+        cont.insertAdjacentHTML("beforebegin","This si how it Before Begin it inserts");
+        cont.insertAdjacentHTML("beforeend","Hekkkkiiiii before End");
+
+
+        document.querySelector(".contain").classList.add("bgcoll");
+        
+    </script>
+</body>
+</html>
